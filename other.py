@@ -38,11 +38,6 @@ for i in range(2 ** t):
 
 Q = QFT(9)
 reg1 = np.linalg.inv(Q).dot(reg1)
-print(abs(reg1))
-print(abs(reg1[0]))
-print(abs(reg1[85]))
-print(abs(reg1[86]))
-print(abs(reg1[256]))
 
 fig, ax = plt.subplots( nrows=1, ncols=1 )
 ax.plot(abs(reg1))
